@@ -30,11 +30,13 @@ You can run the server in several ways:
 npm start
 ```
 
-Or run directly from source with live compilation:
+Or run in development mode with automatic restart on file changes:
 
 ```bash
 npm run dev
 ```
+
+The `dev` script watches for changes in the source files and automatically restarts the server.
 
 **Using npx:**
 
@@ -91,7 +93,17 @@ Input arguments:
 
 ## Development
 
-Rebuild on changes:
+**Development mode with watch:**
+
+The `dev` script automatically watches for file changes and restarts the server:
+
+```bash
+npm run dev
+```
+
+**Manual rebuild:**
+
+To rebuild the project manually:
 
 ```bash
 npm run build

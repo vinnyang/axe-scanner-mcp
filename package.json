@@ -11,7 +11,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "tsx src/index.ts",
+    "dev": "tsx --watch src/index.ts",
     "prepublishOnly": "npm run build",
     "scan": "tsx scripts/run-axe-scan.ts"
   },
