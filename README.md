@@ -20,7 +20,11 @@ npm run build
 
 ## Usage
 
-Run the server over stdio:
+### Running the MCP Server
+
+You can run the server in several ways:
+
+**Using npm scripts (recommended for development):**
 
 ```bash
 npm start
@@ -30,6 +34,29 @@ Or run directly from source with live compilation:
 
 ```bash
 npm run dev
+```
+
+**Using npx:**
+
+After building the package (`npm run build`), you can run it with npx:
+
+```bash
+# Using the local path
+npx /path/to/axe-scanner-mcp
+
+# Or link it locally first for easier access
+npm link
+npx axe-scanner-mcp
+
+# Or install it in another project
+npm install /path/to/axe-scanner-mcp
+npx axe-scanner-mcp
+```
+
+**Using node directly:**
+
+```bash
+node dist/index.js
 ```
 
 Run a one-off scan from the CLI:
