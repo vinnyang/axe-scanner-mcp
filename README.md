@@ -18,6 +18,44 @@ npm install
 npm run build
 ```
 
+## Setting up with MCP Clients
+
+This configuration works with all MCP-compatible clients (Claude Desktop, Cursor, etc.). Add the following to your MCP client configuration:
+
+**Using node:**
+
+```json
+{
+  "mcpServers": {
+    "axe-scanner-mcp": {
+      "command": "node",
+      "args": ["/absolute/path/to/axe-scanner-mcp/dist/index.js"]
+    }
+  }
+}
+```
+
+**Using npx:**
+
+```json
+{
+  "mcpServers": {
+    "axe-scanner-mcp": {
+      "command": "npx",
+      "args": ["-y", "/absolute/path/to/axe-scanner-mcp"]
+    }
+  }
+}
+```
+
+**Note:**
+- Use absolute paths in your configuration
+- Configuration file locations:
+  - **Claude Desktop (macOS):** `~/Library/Application Support/Claude/claude_desktop_config.json`
+  - **Claude Desktop (Windows):** `%APPDATA%\Claude\claude_desktop_config.json`
+  - **Cursor:** Settings → Features → Model Context Protocol
+- Restart your MCP client after adding the server configuration
+
 ## Usage
 
 ### Running the MCP Server
@@ -44,14 +82,14 @@ After building the package (`npm run build`), you can run it with npx:
 
 ```bash
 # Using the local path
-npx /path/to/axe-scanner-mcp
+npx /absolute/path/to/axe-scanner-mcp
 
 # Or link it locally first for easier access
 npm link
 npx axe-scanner-mcp
 
 # Or install it in another project
-npm install /path/to/axe-scanner-mcp
+npm install /absolute/path/to/axe-scanner-mcp
 npx axe-scanner-mcp
 ```
 
