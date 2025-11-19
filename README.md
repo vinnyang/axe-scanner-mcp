@@ -2,6 +2,10 @@
 
 A standalone Model Context Protocol server that runs axe accessibility scans for a supplied URL using Playwright.
 
+
+## Screenshot
+![Screenshot 2025-11-18 at 16 07 24](https://github.com/user-attachments/assets/9f3a8677-1c46-4f35-b608-dcd604114ec1)
+
 ## Prerequisites
 
 - Node.js 18 or newer
