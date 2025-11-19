@@ -1,4 +1,4 @@
-# Axe Scanner MCP Server
+# Axe Scanner MCP Server [![smithery badge](https://smithery.ai/badge/@vinnyang/axe-scanner-mcp)](https://smithery.ai/server/@vinnyang/axe-scanner-mcp)
 
 A standalone Model Context Protocol server that runs axe accessibility scans for a supplied URL using Playwright.
 
